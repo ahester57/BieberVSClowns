@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuController">
+   <children>
+      <Separator prefWidth="200.0" />
+      <ImageView fitHeight="145.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/insane-clown-posse.jpg" />
+         </image>
+      </ImageView>
+      <Separator prefWidth="200.0" />
+      <Button fx:id="begin" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" text="Start Game" />
+      <MenuButton mnemonicParsing="false" text="Difficulty">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Easy" />
+          <MenuItem mnemonicParsing="false" text="Hard" />
+        </items>
+      </MenuButton>
+      <Button fx:id="help" mnemonicParsing="false" onAction="#handleButtonAction" text="Help" />
+      <Button mnemonicParsing="false" text="Quit" />
+   </children>
+   <effect>
+      <DropShadow blurType="GAUSSIAN" color="#5b84ae" height="29.9" radius="9.26" spread="0.08" width="9.14" />
+   </effect>
+</VBox>
